@@ -46,62 +46,74 @@ header {
       justify-content: center;
       align-items: center;
       position: relative;
-      margin: 0 7px;
+      margin: 0 2px;
     }
-    .sm a::before{
-      content: '';
-      position: absolute;
-      width: 60px;
-      height: 60px;
-      border-radius: 25%;
-      z-index: -1;
-      transition: transform .3s ease-in;
-    }
-    .sm a:nth-child(1)::before{
-      background: red;;
-    }
-    .sm a:nth-child(1)::before{
-      background: #5865f2;;
-    }
-    .sm a:nth-child(2)::before{
-      background: #1c96e9;
-    }
-    .sm a:nth-child(4)::before{
-      background: white;
-    }
-    .sm a:nth-child(5)::before{
-      background: #5865f2;
-    }
-    .sm a:hover::before{
-      transform: scale(0);
-    }
-    .sm a i{
-      transition: transform .3s ease-in;
-    }
-    .sm a:nth-child(1):hover i{
-      background: red;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      transform: scale(1.5);
-    }
-    .sm a:nth-child(2):hover i{
-      background: white;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      transform: scale(1.5);
-    }
-    .sm a:nth-child(3):hover i{
-      background: #5865f2;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      transform: scale(1.5);
-    }
-    .sm a:nth-child(4):hover i{
-      background: #1c96e9;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      transform: scale(1.5);
-    }
+.sm a::before{
+  content: '';
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  border-radius: 25%;
+  z-index: -1;
+  transition: transform .3s ease-in;
+}
+.sm a:nth-child(1)::before{
+  background: red;
+}
+.sm a:nth-child(3)::before{
+  background: #5865f2;;
+}
+.sm a:nth-child(4)::before{
+  background: #1c96e9;
+}
+.sm a:nth-child(2)::before{
+  background: white;
+}
+.sm a:nth-child(5)::before{
+  background: #E1306C;
+}
+.sm a:hover::before{
+  transform: scale(0);
+}
+.sm a i{
+  transition: transform .3s ease-in;
+}
+.sm a:nth-child(1):hover i{
+  background: red;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transform: scale(1.5);
+}
+.sm a:nth-child(1):hover i{
+  background: red;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transform: scale(1.5);
+}
+.sm a:nth-child(2):hover i{
+  background: white;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transform: scale(1.5);
+}
+.sm a:nth-child(3):hover i{
+  background:#5865f2; 
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transform: scale(1.5);
+}
+.sm a:nth-child(4):hover i{
+  background: #1c96e9;;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transform: scale(1.5);
+}
+.sm a:nth-child(5):hover i{
+  background: #E1306C;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transform: scale(1.5);
+}
 #brand a {
   color: #09c372;
 }
@@ -383,4 +395,63 @@ height:100px;
     color:white;
     font-family: Arial;
     }
-    
+    .policy:hover {
+      text-decoration: underline;
+      cursor: pointer;
+          }
+          .select-menu{
+            width: 150px;
+            cursor: pointer;
+            position: relative;
+          }
+          
+          .select{
+            background-color: black;
+            padding: 20px;
+            color: #fff;
+            font-weight: 500;
+            border-radius: 6px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top:35px;
+          }
+          
+          .options-list{
+            position: absolute;
+            width: 100%;
+            background-color: green;
+            color:orange;
+            border-radius: 6px;
+            margin-top: 14px;
+            padding: 0 20px;
+            max-height: 180px;
+            overflow-y: auto;
+            transition: .4s linear .2s;
+            height: 0;
+          }
+          
+          .option{
+            padding: 8px 0;
+            font-weight: 500;
+            font-size: 14px;
+            transition: .3s ease-in-out;
+          }
+          
+          .option:hover,
+          .option.selected{
+            color: #5d00ff;
+          }
+          
+          .options-list::-webkit-scrollbar{
+            width: 4px;
+            background-color: #5d00ff;
+          }
+          
+          .options-list::-webkit-scrollbar-thumb{
+            background-color: yellow;
+          }
+          
+          .options-list.active{
+            height: 150px;
+          }
