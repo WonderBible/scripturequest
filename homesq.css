@@ -456,7 +456,7 @@ height:100px;
             height: 150px;
           }
           #preloader{
-            background: #ffffff url(https://wonderbible.world/Loading.gif) no-repeat center center;
+            background: #ffffff url(Loading.gif) no-repeat center center;
             height: 100vh;
             width: 100%;
             position: fixed;
